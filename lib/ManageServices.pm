@@ -378,6 +378,9 @@ sub findProcess
 			next;
 		}
 		if ($p->{'cmndline'} =~ m#$self->{'module'}->{'cmndline'}#) {
+			if ($p->{'state'} eq 'defunct') {
+				next;
+			}
 			return $p->{'pid'};
 		}
 	}
@@ -403,6 +406,9 @@ sub pids
 			next;
 		}
 		if ($p->{'cmndline'} =~ m#$self->{'module'}->{'cmndline'}#) {
+			if ($p->{'state'} eq 'defunct') {
+				next;
+			}
 			push(@pids,$p->{'pid'});
 		}
 	}
@@ -564,9 +570,12 @@ sub start
 			foreach my $testing ( @pids ) {
 				foreach ( @{ $self->{'processTable'}->table } ) {
 					if ($_->{'pid'} == $testing && 
-						$_->{'cmndline'} =~ m#$self->{'module'}->{'cmndline'}#i ) 
+						$_->{'cmndline'} =~ m#$self->{'module'}->{'cmndline'}#i )
 					{
 						if ($_->{'pid'} == $pid) {
+							if ($_->{'state'} eq 'defunct') {
+								next;
+							}
 							$self->doLog( 'Started successfully',
 								'daemon' );
 						} else {
