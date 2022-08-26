@@ -218,9 +218,9 @@ $htxt['GLOSSARY'] = '
 <h3>Virus</h3>
 <p>Softwareelement, das als Anlage (attachment) in Ihren Computer eindringt und m&ouml;glicherweise dessen Integrit&auml;t beeintr&auml;chtigt.</p>
 <h3>Warnliste</h3>
-<p>Liste von Absendern Ihres Vertrauens, sodass Sie f&uuml;r jedes ihrer in der Quarant&auml;ne zur&uuml;ckbehaltene E-Mail eine Warnung erhalten. Auf Englisch: Warn List.</p>
+<p>Liste von Absendern Ihres Vertrauens, sodass Sie f&uuml;r jedes ihrer in der Quarant&auml;ne zur&uuml;ckbehaltene E-Mail eine Warnung erhalten. Auf Englisch: Warnlist.</p>
 <h3>Weisse Liste</h3>
-<p>Liste von Absendern Ihres Vertrauens, sodass deren E-Mails nicht in der Quarant&auml;ne zur&uuml;ckbehalten werden. Auf Englisch: White List.</p>
+<p>Liste von Absendern Ihres Vertrauens, sodass deren E-Mails nicht in der Quarant&auml;ne zur&uuml;ckbehalten werden. Auf Englisch: Allowlist.</p>
 <h3>Wow</h3>
 <p>Das sagen Sie jetzt hoffentlich.</p>
 ';

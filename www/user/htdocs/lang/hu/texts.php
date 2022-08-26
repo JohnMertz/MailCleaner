@@ -10,9 +10,9 @@ $txt['NEWSLETTERMODULE'] = "Hírlevél";
 $txt['NEWSLETTERSTOPIC'] = "Hírlevelek";
 $txt['NEWSLETTERSTOPICTITLE'] = "Hírlevelek";
 $txt['NEWSLETTERSSHORTHELP'] = "Itt kezelheti a hírleveleket.";
-$txt['NEWSLETTERSALLOW'] = "Postáz";
+$txt['NEWSLETTERSDELIVER'] = "Postáz";
 $txt['NEWSLETTERACCEPT'] = "Elfogadja ezt a hírlevelet";
-$txt['SPAM_WHITELIST_DISABLED'] = "Ez a lista nem aktívált ehhez a tartományhoz (Forduljon a Rendszergazdához).";
+$txt['SPAM_ALLOWLIST_DISABLED'] = "Ez a lista nem aktívált ehhez a tartományhoz (Forduljon a Rendszergazdához).";
 /*
  * generic buttons
  */
@@ -178,7 +178,7 @@ $txt['GROUPQUARANTINES'] = "All addresses";
  */
 $txt['INFORMATIONSABOUTMSG'] = "Contents of the message";
 $txt['PREFILTERHITS'] = "Pre-filters";
-$txt['BLACKLISTS'] = "Blacklists";
+$txt['BLOCKLISTS'] = "Blocklists";
 $txt['FITLERSCORE'] = "Score";
 $txt['NONE'] = "none";
 $txt['HEADERS'] = "Headers";
@@ -241,7 +241,7 @@ $txt['USEDEFAULT'] = "use default";
 $txt['SUMMHTML'] = "HTML";
 $txt['SUMMTEXT'] = "plaintext";
 //old
-$txt['EDITWHITELIST'] = "edit whitelist";
+$txt['EDITALLOWLIST'] = "edit allowlist";
 //old
 $txt['EDITWARNLIST'] = "edit warnlist";
 //old
@@ -263,7 +263,7 @@ $txt['WWENTRY'] = "Entry";
 //old
 $txt['CONFIRMWWENTRYDELETE'] = "Are you sure you want to permanently delete this entry?";
 //old
-$txt['WHITELISTFOR'] = "Whitelist for __PARAM__";
+$txt['ALLOWLISTFOR'] = "Allowlist for __PARAM__";
 //old
 $txt['WARNLISTFOR'] = "Warnlist for __PARAM__";
 //old
@@ -392,16 +392,16 @@ $txt['ADDRESSLISTTOPIC'] = "Address group";
 $txt['ADDRESSPARAMTOPIC'] = "Address settings";
 $txt['QUARPARAMTOPIC'] = "Quarantine display";
 $txt['WARNLISTTOPIC'] = "Warnlist";
-$txt['WHITELISTTOPIC'] = "Whitelist";
-$txt['BLACKLISTTOPIC'] = "Blacklist";
+$txt['ALLOWLISTTOPIC'] = "Allowlist";
+$txt['BLOCKLISTTOPIC'] = "Blocklist";
 $txt['NEWSLISTTOPIC'] = "Newslist";
 $txt['INTERFACETOPICTITLE'] = "interface settings";
 $txt['ADDRESSLISTTOPICTITLE'] = "address group";
 $txt['ADDRESSPARAMTOPICTITLE'] = "address settings";
 $txt['QUARPARAMTOPICTITLE'] = "quarantine display";
 $txt['WARNLISTTOPICTITLE'] = "warnlist";
-$txt['WHITELISTTOPICTITLE'] = "whitelist";
-$txt['BLACKLISTTOPICTITLE'] = "blacklist";
+$txt['ALLOWLISTTOPICTITLE'] = "allowlist";
+$txt['BLOCKLISTTOPICTITLE'] = "blocklist";
 $txt['NEWSLISTTOPICTITLE'] = "newslist";
 /*
  * interface (new)
@@ -465,24 +465,24 @@ $txt['REMOVEANENTRY'] = "Disable, enable or remove an address from the list";
 $txt['REMOVEAWARNENTRYSHORTHELP'] = "Select the address or addresses you want to modify from the list and click on the desired action button.";
 $txt['REMTHEENTRY'] = "Remove selection";
 $txt['DISABLETHEENTRY'] = "Disable/enable selection";
-$txt['WHITELISTSHORTHELP'] = "Az engedélyezési lista olyan megbízható feladói címeket tartalmaz, amelyeknél soha nem történik karanténmegőrzés.<br>< /> 
+$txt['ALLOWLISTSHORTHELP'] = "Az engedélyezési lista olyan megbízható feladói címeket tartalmaz, amelyeknél soha nem történik karanténmegőrzés.<br>< /> 
                                    Figyelmeztetés: Ezt a funkciót ideiglenes megoldásként kell használni, mivel csökkenti a teljes védelmet.
                                   Az engedélyezési lista használatáról további információt a <a>href=\"help.php\"\"help\"</a>) című részben talál. 
 ";
-$txt['BLACKLISTSHORTHELP'] = "The blacklist contains blacklisted sender addresses.
-                                  Check the manual (available in section <a href=\"help.php\">\"Help\"</a>) for more information on black list usage.
+$txt['BLOCKLISTSHORTHELP'] = "The blocklist contains blocklisted sender addresses.
+                                  Check the manual (available in section <a href=\"help.php\">\"Help\"</a>) for more information on block list usage.
 ";
 $txt['NEWSLISTSHORTHELP'] = "The newsletter list contains addresses of desired newsletters.<br />
                                   Check the manual (available in section <a href=\"help.php\">\"Help\"</a>) for more information on newsletter list usage.
 ";
-$txt['WHITELISTFORADDRESS'] = "Whitelist for the address";
-$txt['ADDAWHITEENTRY'] = "Add an address to the list";
-$txt['WHITELISTENTRYTOADD'] = "Enter the address you want to add to the whitelist. You can also add an optional comment.";
-$txt['REMOVEAWHITEENTRYSHORTHELP'] = "Select the address or addresses you want to modify from the list and click on the desired action button.";
-$txt['BLACKLISTFORADDRESS'] = "Blacklist for the address";
-$txt['ADDABLACKENTRY'] = "Add an address to the list";
-$txt['BLACKLISTENTRYTOADD'] = "Enter the address you want to add to the blacklist. You can also add an optional comment.";
-$txt['REMOVEABLACKENTRYSHORTHELP'] = "Select the address or addresses you want to modify from the list and click on the desired action button.";
+$txt['ALLOWLISTFORADDRESS'] = "Allowlist for the address";
+$txt['ADDAALLOWENTRY'] = "Add an address to the list";
+$txt['ALLOWLISTENTRYTOADD'] = "Enter the address you want to add to the allowlist. You can also add an optional comment.";
+$txt['REMOVEAALLOWENTRYSHORTHELP'] = "Select the address or addresses you want to modify from the list and click on the desired action button.";
+$txt['BLOCKLISTFORADDRESS'] = "Blocklist for the address";
+$txt['ADDABLOCKENTRY'] = "Add an address to the list";
+$txt['BLOCKLISTENTRYTOADD'] = "Enter the address you want to add to the blocklist. You can also add an optional comment.";
+$txt['REMOVEABLOCKENTRYSHORTHELP'] = "Select the address or addresses you want to modify from the list and click on the desired action button.";
 $txt['NEWSLISTFORADDRESS'] = "Newsletter list for the address";
 $txt['ADDANEWSENTRY'] = "Add an address to the list";
 $txt['NEWSLISTENTRYTOADD'] = "Enter the address you want to add to the newsletter list. You can also add an optional comment.";
@@ -527,19 +527,19 @@ $txt['CANNOTLOADMESSAGE'] = "Nem sikerült betölteni az üzenetet (lehet, hogy 
 $txt['ADDTOGROUP'] = "Hozzáadás a csoport összes címéhez";
 $txt['NEWSLONLY'] = "Csak hírlevelek megjelenítése";
 $txt['SPAMONLY'] = "Csak spam megjelenítése";
-$txt['ADDWHITENEWSLIST'] = "Ugyanazon feladótól származó összes jövőbeli spam engedélyezési listájára kerül? Elfogadja a hírleveleket is ettől a feladótól?";
+$txt['ADDALLOWNEWSLIST'] = "Ugyanazon feladótól származó összes jövőbeli spam engedélyezési listájára kerül? Elfogadja a hírleveleket is ettől a feladótól?";
 /*
- * Newslist and Whitelist rule
+ * Newslist and Allowlist rule
  */
-$txt['ADDNEWSWHITELIST'] = "Elfogadja az összes jövőbeli hírlevelet ugyanaztól a feladótól? Ettől a feladótól származó spamüzeneteket is engedélyezi?";
-$txt['NOTWHITELISTBODY'] = "Hiba történt az engedélyezőlista hozzáadása során.";
-$txt['NOTWHITELISTHEAD'] = "Az engedélyezőlistára vonatkozó szabály nincs hozzáadva.";
-$txt['WHITELISTBODY'] = "Egy fehér listára vonatkozó szabályt adtunk hozzá. Ettől a feladótól jövő üzenetek nem lesznek megjelölve, ha spamként észlelik őket.";
-$txt['WHITELISTHEAD'] = "Az engedélyezőlistára vonatkozó szabály hozzáadásra került.";
+$txt['ADDNEWSALLOWLIST'] = "Elfogadja az összes jövőbeli hírlevelet ugyanaztól a feladótól? Ettől a feladótól származó spamüzeneteket is engedélyezi?";
+$txt['NOTALLOWLISTBODY'] = "Hiba történt az engedélyezőlista hozzáadása során.";
+$txt['NOTALLOWLISTHEAD'] = "Az engedélyezőlistára vonatkozó szabály nincs hozzáadva.";
+$txt['ALLOWLISTBODY'] = "Egy fehér listára vonatkozó szabályt adtunk hozzá. Ettől a feladótól jövő üzenetek nem lesznek megjelölve, ha spamként észlelik őket.";
+$txt['ALLOWLISTHEAD'] = "Az engedélyezőlistára vonatkozó szabály hozzáadásra került.";
 /*
- * Whitelist rule
+ * Allowlist rule
  */
-$txt['ADDWHITELIST'] = "Ugyanazon feladótól származó összes jövőbeli spam engedélyezési listájára kerül?";
+$txt['ADDALLOWLIST'] = "Ugyanazon feladótól származó összes jövőbeli spam engedélyezési listájára kerül?";
 $txt['NOTNEWSLISTBODY'] = "Hiba történt a hírlevél fehér listájának hozzáadása során.";
 $txt['NOTNEWSLISTHEAD'] = "A hírlista szabály nincs hozzáadva.";
 $txt['NEWSLETTERUNSUB'] = "leiratkozás";

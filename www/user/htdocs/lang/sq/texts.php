@@ -1,8 +1,8 @@
 <?php
 $txt['NEWSLETTERSSHORTHELP'] = "Ketu mund ti menaxhoni newsletters.";
-$txt['NEWSLETTERSALLOW'] = "dergoni";
+$txt['NEWSLETTERSDELIVER'] = "dergoni";
 $txt['NEWSLETTERACCEPT'] = "Pranoni kete newsletter";
-$txt['SPAM_WHITELIST_DISABLED'] = "Kjo liste nuk eshte e aktivuar per kete domain (Kontaktoni administratorin e juaj).";
+$txt['SPAM_ALLOWLIST_DISABLED'] = "Kjo liste nuk eshte e aktivuar per kete domain (Kontaktoni administratorin e juaj).";
 /* 
  * generic buttons
  */
