@@ -25,10 +25,10 @@ class ConfigUserWWList {
         global $user_;
 
         if ($_GET['t'] && $_GET['t'] == 'allow' || $_GET['t'] == 'white') {
-            $this->type_ = 'allow';
+            $this->type_ = 'white';
         }
         if ($_GET['t'] && $_GET['t'] == 'block' || $_GET['t'] == 'black') {
-            $this->type_ = 'block';
+            $this->type_ = 'black';
         }
         if ($_GET['t'] && $_GET['t'] == 'wnews') {
             $this->type_ = 'wnews';
