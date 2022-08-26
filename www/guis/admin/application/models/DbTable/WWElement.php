@@ -5,7 +5,7 @@
  * @author Olivier Diserens
  * @copyright 2009, Olivier Diserens
  * 
- * White/Warn lists table
+ * Allow/Warn lists table
  */
 
 class Default_Model_DbTable_WWElement extends Zend_Db_Table_Abstract

@@ -10,7 +10,7 @@ $newsletters = array();
 ?>
 <table>
     <tr>
-        <td>__LANG_NEWSLETTERSALLOW__</td>
+        <td>__LANG_NEWSLETTERSDELIVER__</td>
         <td><input type="checkbox" class="switch" value=""></input></td>
     </tr>
 </table>

@@ -63,14 +63,14 @@ $replace = array(
 
 $replace['__ACTIONS__'] = '';
 
-// Check for whitelist permission
+// Check for allowlist permission
 $dom = $_GET['a'];
 $dom = preg_replace('/^.*@([^@]*)$/', '$1', $dom);
 $antispam_ = new AntiSpam();
 $antispam_->load();
 $domain = new Domain();
 $domain->load($dom);
-$can_whitelist = ( $domain->getPref('enable_whitelists') || (($domain->getPref('enable_whitelists') == null) && $antispam_->getPref('enable_whitelists')) );
+$can_allowlist = ( $domain->getPref('enable_whitelists') || (($domain->getPref('enable_whitelists') == null) && $antispam_->getPref('enable_whitelists')) );
 
 // Get sender
 $spam_mail = new Spam();
@@ -104,18 +104,18 @@ if ($sender || $single_use) {
 if (isset($_GET['n']) && $_GET['n'] == 1) {
   $replace['__MESSAGE__'] .= '<hr style="font-size: 35px;" /><p><b>' . $lang_->print_txt('ADDITIONALACTION') . '</b></p>';
   $news = '<input type="button" class="button" id="newslist" onclick="location = \'/newslist.php?id=' . $_GET['id'] . '&a=' . urlencode($_GET['a']) . '&t=\' + encodeURI(document.querySelector(\'input[name=t]:checked\').value);" value="' . $lang_->print_txt("NEWSLISTTOPIC") . '"></input>';
-  if ($can_whitelist) {
-    $replace['__MESSAGE__'] .= '<p>' . $lang_->print_txt('ADDNEWSWHITELIST') . '</p>' . $target;
-    $news .= '<input type="button" class="button" id="newswhitelist" onclick="location = \'/newswhitelist.php?id=' . $_GET['id'] . '&a=' . urlencode($_GET['a']) . '&t=\' + encodeURI(document.querySelector(\'input[name=t]:checked\').value);" value="' . $lang_->print_txt("NEWSLISTTOPIC") . ' + ' . $lang_->print_txt("WHITELISTTOPIC") . '" />';
+  if ($can_allowlist) {
+    $replace['__MESSAGE__'] .= '<p>' . $lang_->print_txt('ADDNEWSALLOWLIST') . '</p>' . $target;
+    $news .= '<input type="button" class="button" id="newsallowlist" onclick="location = \'/newsallowlist.php?id=' . $_GET['id'] . '&a=' . urlencode($_GET['a']) . '&t=\' + encodeURI(document.querySelector(\'input[name=t]:checked\').value);" value="' . $lang_->print_txt("NEWSLISTTOPIC") . ' + ' . $lang_->print_txt("ALLOWLISTTOPIC") . '" />';
   } else {
     $replace['__MESSAGE__'] .= '<p>' . $lang_->print_txt('ADDNEWSLIST') . '</p>' . $target;
   }
   $replace['__ACTIONS__'] .= $news;
 } else {
-  if ($can_whitelist) {
+  if ($can_allowlist) {
     $replace['__MESSAGE__'] .= '<hr style="font-size: 35px;" /><p><b>' . $lang_->print_txt('ADDITIONALACTION') . '</b></p>';
-    $replace['__MESSAGE__'] .= '<p>' . $lang_->print_txt('ADDWHITELIST') . '</p>' . $target;
-    $replace['__ACTIONS__'] = '<input type="button" class="button" id="whitelist" onclick="location = \'/whitelist.php?id=' . $_GET['id'] . '&a=' . urlencode($_GET['a']) . '&t=\' + encodeURI(document.querySelector(\'input[name=t]:checked\').value);" value="' . $lang_->print_txt("WHITELISTTOPIC") . '" />';
+    $replace['__MESSAGE__'] .= '<p>' . $lang_->print_txt('ADDALLOWLIST') . '</p>' . $target;
+    $replace['__ACTIONS__'] = '<input type="button" class="button" id="allowlist" onclick="location = \'/allowlist.php?id=' . $_GET['id'] . '&a=' . urlencode($_GET['a']) . '&t=\' + encodeURI(document.querySelector(\'input[name=t]:checked\').value);" value="' . $lang_->print_txt("ALLOWLISTTOPIC") . '" />';
   }
 }
 

@@ -5,7 +5,7 @@
  * @author John Mertz
  * @copyright 2021, MailCleaner
  *
- * This is the controler for the newsletter whitelist page
+ * This is the controler for the newsletter allowlist page
  */
 
 if ($_SERVER["REQUEST_METHOD"] == "HEAD") {

@@ -188,15 +188,15 @@ function getWWListHeader() {
   }
   else if($type_get == 1 | $type_get == 'white') {
 	if ($address == '0') {
-    		return  $lang_->print_txt('WHITELISTFORGLOBAL');
+    		return  $lang_->print_txt('ALLOWLISTFORGLOBAL');
 	}
-  	return $lang_->print_txt_param('WHITELISTFOR', $address);
+  	return $lang_->print_txt_param('ALLOWLISTFOR', $address);
   }
   else if ($type_get == 3 | $type_get == 'black') {
 	if ($address == '0') {
-                return  $lang_->print_txt('BLACKLISTFORGLOBAL');
+                return  $lang_->print_txt('BLOCKLISTFORGLOBAL');
         }
-        return $lang_->print_txt_param('BLACKLISTFOR', $address);
+        return $lang_->print_txt_param('BLOCKLISTFOR', $address);
   }
   else if ($type_get == 4 | $type_get == 'wnews') {
 	if ($address == '0') {

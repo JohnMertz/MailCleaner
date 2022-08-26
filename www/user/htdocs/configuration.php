@@ -45,8 +45,8 @@ if ($antispam_->getPref('enable_warnlists') && $user_->getDomain()->getPref('ena
 if ($antispam_->getPref('enable_whitelists') && $user_->getDomain()->getPref('enable_whitelists')) {
 } */
 
-$topics['white'] = array('WHITELISTTOPIC', 'conf_whitelist.tmpl', 'ConfigUserWWList');
-$topics['black'] = array('BLACKLISTTOPIC', 'conf_blacklist.tmpl', 'ConfigUserWWList');
+$topics['allow'] = array('ALLOWLISTTOPIC', 'conf_allowlist.tmpl', 'ConfigUserWWList');
+$topics['block'] = array('BLOCKLISTTOPIC', 'conf_blocklist.tmpl', 'ConfigUserWWList');
 $topics['wnews'] = array('NEWSLISTTOPIC', 'conf_newslist.tmpl', 'ConfigUserWWList');
 
 

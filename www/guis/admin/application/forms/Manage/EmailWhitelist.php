@@ -5,13 +5,13 @@
  * @author Olivier Diserens
  * @copyright 2009, Olivier Diserens
  * 
- * Email whitelist form
+ * Email allowlist form
  */
 
-class Default_Form_Manage_EmailWhitelist extends Default_Form_ElementList
+class Default_Form_Manage_EmailAllowlist extends Default_Form_ElementList
 {
 	protected $_email;
-	protected $_panelname = 'whitelist';
+	protected $_panelname = 'allowlist';
 	public $_wwlist = array();
 	
 	public function __construct($email)
