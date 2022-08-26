@@ -43,11 +43,11 @@ public function reload() {
   }
  
   $query = "SELECT id FROM wwlists WHERE ";
-  if ($this->type_ == 'white') {
+  if ($this->type_ == 'allow') {
 	$query = $query."type='white'";
   } else if ($this->type_ == 'warn') {
 	$query = $query."type='warn'";
-  } else if ($this->type_ == 'black') {
+  } else if ($this->type_ == 'block') {
         $query = $query."type='black'";
   } else if ($this->type_ == 'wnews') {
         $query = $query."type='wnews'";

@@ -72,9 +72,9 @@ if ($mode == "badmode") {
 
 // check list type parameter
 $type = 'warn';
-if ($type_get=='1' || $type_get=='white') 
+if ($type_get == '1' || $type_get == 'allow' || $type_get == 'white') 
 	$type = 'white';
-if($type_get == '3' || $type_get =='black')
+if ($type_get == '3' || $type_get == 'block' || $type_get == 'black')
 	$type = 'black';
 
 // check if should delete
@@ -186,13 +186,13 @@ function getWWListHeader() {
     }
   	return $lang_->print_txt_param('WARNLISTFOR', $address);
   }
-  else if($type_get == 1 | $type_get == 'white') {
+  else if($type_get == 1 | $type_get == 'allow' | $type_get == 'white') {
 	if ($address == '0') {
     		return  $lang_->print_txt('ALLOWLISTFORGLOBAL');
 	}
   	return $lang_->print_txt_param('ALLOWLISTFOR', $address);
   }
-  else if ($type_get == 3 | $type_get == 'black') {
+  else if ($type_get == 3 | $type_get == 'block' | $type_get == 'black') {
 	if ($address == '0') {
                 return  $lang_->print_txt('BLOCKLISTFORGLOBAL');
         }
