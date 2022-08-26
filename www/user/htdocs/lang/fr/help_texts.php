@@ -273,10 +273,10 @@ ISP pour Internet Service Provider.</p>
 messagerie.</p>
 <h3>Liste blanche</h3>
 <p>Liste comportant des adresses d\'exp&eacute;diteurs de confiance, pour lesquelles aucune retenue en
-quarantaine ne sera effectu&eacute;e. En anglais : White List.</p>
+quarantaine ne sera effectu&eacute;e. En anglais : Allowlist.</p>
 <h3>Liste d\'avertissement</h3>
 <p>Liste comportant des adresses d\'exp&eacute;diteurs de confiance, pour lesquelles tout message bloqu&eacute; en
-quarantaine vous sera notifi&eacute; par un avertissement. En anglais : Warn List.</p>
+quarantaine vous sera notifi&eacute; par un avertissement. En anglais : Warnlist.</p>
 <h3>Plug-in</h3>
 <p>Nom donn&eacute; en anglais &agrave; une extension &agrave; installer dans une application. L\'extension MailCleaner pour
 Microsoft Oulook simplifie la notification des faux-n&eacute;gatifs.</p>

@@ -249,10 +249,10 @@ $htxt['GLOSSARY'] = '
 <p>Country of origin of MailCleaner, where spam is eradicated with watchmaker\'s quality and precision.</p>
 <h3>Virus</h3>
 <p>An intrusive software entity, sometimes included as an attachment to a message, which may alter the integrity of your computer.</p>
-<h3>Warn list</h3>
-<p>A list of e-mail addresses that are trustworthy and should not generate spam. You will receive a warning if a message sent from a warn list address is blocked by MailCleaner.</p>
-<h3>White list</h3>
-<p>A list of e-mail addresses that are fully trustworthy. Messages sent from white list addresses will never be blocked by MailCleaner.</p>
+<h3>Warnlist</h3>
+<p>A list of e-mail addresses that are trustworthy and should not generate spam. You will receive a warning if a message sent from a warnlist address is blocked by MailCleaner.</p>
+<h3>Allowlist</h3>
+<p>A list of e-mail addresses that are fully trustworthy. Messages sent from allowlist addresses will never be blocked by MailCleaner.</p>
 <h3>Wow.</h3> 
 <p>What we hope you will say as a MailCleaner user.</p>
 ';

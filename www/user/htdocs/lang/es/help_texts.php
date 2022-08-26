@@ -219,9 +219,9 @@ $htxt['GLOSSARY'] = '
 <h3>Liberar un mensaje</h3>
 <p>Autorizar un mensaje a quitar la cuarentena para llegar en su correo electr&oacute;nico.</p>
 <h3>Lista blanca</h3>
-<p>Lista que contiene los remitentes de confianza, que no sufren de la cuarentena. En ingl&eacute;s: White List.</p>
+<p>Lista que contiene los remitentes de confianza, que no sufren de la cuarentena. En ingl&eacute;s: Allowlist.</p>
 <h3>Lista de alarma</h3>
-<p>Lista que contiene los remitentes de confianza. Recibe una notificaci&oacute;n cuando un mensaje est&aacute; en la cuarentena. En ingl&eacute;s: Warm list.</p>
+<p>Lista que contiene los remitentes de confianza. Recibe una notificaci&oacute;n cuando un mensaje est&aacute; en la cuarentena. En ingl&eacute;s: Warmlist.</p>
 <h3>Periodo de retenci&oacute;n</h3>
 <p>Es el periodo de retenci&oacute;n de los mensajes en la cuarentena. Al final de este periodo, suprimimos los mensajes de manera autom&aacute;tica.</p>
 <h3>RBL </h3>

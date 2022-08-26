@@ -77,9 +77,9 @@ $txt['CANCEL'] = "रद्द करना";
  * generic buttons
  */
 $txt['SUBMIT'] = "प्रस्तुत";
-$txt['SPAM_WHITELIST_DISABLED'] = "इस डोमेन के लिए सूची सक्रिय नहीं है (अपने व्यवस्थापक से संपर्क करें)।";
+$txt['SPAM_ALLOWLIST_DISABLED'] = "इस डोमेन के लिए सूची सक्रिय नहीं है (अपने व्यवस्थापक से संपर्क करें)।";
 $txt['NEWSLETTERACCEPT'] = "इस समाचार पत्र को स्वीकार करें";
-$txt['NEWSLETTERSALLOW'] = "उद्धार";
+$txt['NEWSLETTERSDELIVER'] = "उद्धार";
 $txt['NEWSLETTERSSHORTHELP'] = "यहां आप अपने समाचारपत्रिकाएँ प्रबंधित कर सकते हैं।";
 $txt['NEWSLETTERSTOPICTITLE'] = "समाचार पत्र";
 $txt['NEWSLETTERSTOPIC'] = "समाचार पत्र";

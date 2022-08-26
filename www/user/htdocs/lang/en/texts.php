@@ -10,10 +10,10 @@ $txt['NEWSLETTERMODULE'] = "Newsletter";
 $txt['NEWSLETTERSTOPIC'] = "Newsletters";
 $txt['NEWSLETTERSTOPICTITLE'] = "Newsletters";
 $txt['NEWSLETTERSSHORTHELP'] = "Here you can manage your newsletters.";
-$txt['NEWSLETTERSALLOW'] = "deliver";
+$txt['NEWSLETTERSDELIVER'] = "deliver";
 $txt['NEWSLETTERACCEPT'] = "Accept this newsletter";
 $txt['NEWSLETTERUNSUB'] = "Unsubscribe";
-$txt['SPAM_WHITELIST_DISABLED'] = "The list is not activated for this domain (contact your administrator).";
+$txt['SPAM_ALLOWLIST_DISABLED'] = "The list is not activated for this domain (contact your administrator).";
 /*
  * generic buttons
  */
@@ -129,7 +129,7 @@ $txt['PURGESELECTEDSPAMS'] = "Manually purge the quarantine";
 $txt['HIDEFORCED'] = "Hide user-released messages";
 $txt['FORCESPAM'] = "release the message";
 $txt['ASKREASON'] = "display filtering rules";
-$txt['CONFSENDANALYSE'] = "A filter adjustment request will be sent to the MailCleaner Analysis Center; it includes a copy of the message that was erroneously blocked.</br>Note: A filter adjustment is not the same as whitelisting or blacklisting.";
+$txt['CONFSENDANALYSE'] = "A filter adjustment request will be sent to the MailCleaner Analysis Center; it includes a copy of the message that was erroneously blocked.</br>Note: A filter adjustment is not the same as allowlisting or blocklisting.";
 $txt['AREYOUSURE'] = "<span class=\"question\">Are you sure you want this message to be analyzed and that filter adjustments may be applied?</span>";
 $txt['ASKANALYSE'] = "Filter adjustment request";
 $txt['PAGE'] = "Page";
@@ -162,7 +162,7 @@ $txt['NEWSLONLY'] = "Show newsletters only";
  */
 $txt['INFORMATIONSABOUTMSG'] = "Contents of the message";
 $txt['PREFILTERHITS'] = "Pre-filters";
-$txt['BLACKLISTS'] = "Blacklists";
+$txt['BLOCKLISTS'] = "Blocklists";
 $txt['FITLERSCORE'] = "Score";
 $txt['NONE'] = "none";
 $txt['HEADERS'] = "Headers";
@@ -206,7 +206,7 @@ $txt['SUMMARYTYPE'] = "Report format";
 $txt['USEDEFAULT'] = "use default";
 $txt['SUMMHTML'] = "HTML";
 $txt['SUMMTEXT'] = "plaintext";
-$txt['EDITWHITELIST'] = "edit whitelist"; 
+$txt['EDITALLOWLIST'] = "edit allowlist"; 
 $txt['EDITWARNLIST'] = "edit warnlist"; 
 $txt['EDITNEWSLIST'] = "edit newslist"; 
 /*
@@ -219,7 +219,7 @@ $txt['ACTIVE'] = "active";
 $txt['INNACTIVE'] = "inactive"; 
 $txt['WWENTRY'] = "Entry"; 
 $txt['CONFIRMWWENTRYDELETE'] = "Are you sure you want to permanently delete this entry?"; 
-$txt['WHITELISTFOR'] = "Whitelist for __PARAM__"; 
+$txt['ALLOWLISTFOR'] = "Allowlist for __PARAM__"; 
 $txt['WARNLISTFOR'] = "Warnlist for __PARAM__"; 
 $txt['NEWSLISTFOR'] = "Newslist for __PARAM__"; 
 $txt['STATUS'] = "Status"; 
@@ -323,16 +323,16 @@ $txt['ADDRESSLISTTOPIC'] = "Address group";
 $txt['ADDRESSPARAMTOPIC'] = "Address settings";
 $txt['QUARPARAMTOPIC'] = "Quarantine display";
 $txt['WARNLISTTOPIC'] = "Warnlist";
-$txt['WHITELISTTOPIC'] = "Whitelist";
-$txt['BLACKLISTTOPIC'] = "Blacklist";
+$txt['ALLOWLISTTOPIC'] = "Allowlist";
+$txt['BLOCKLISTTOPIC'] = "Blocklist";
 $txt['NEWSLISTTOPIC'] = "Newslist";
 $txt['INTERFACETOPICTITLE'] = "interface settings";
 $txt['ADDRESSLISTTOPICTITLE'] = "address group";
 $txt['ADDRESSPARAMTOPICTITLE'] = "address settings";
 $txt['QUARPARAMTOPICTITLE'] = "quarantine display";
 $txt['WARNLISTTOPICTITLE'] = "warnlist";
-$txt['WHITELISTTOPICTITLE'] = "whitelist";
-$txt['BLACKLISTTOPICTITLE'] = "blacklist";
+$txt['ALLOWLISTTOPICTITLE'] = "allowlist";
+$txt['BLOCKLISTTOPICTITLE'] = "blocklist";
 $txt['NEWSLISTTOPICTITLE'] = "newslist";
 /*
  * interface (new)
@@ -397,24 +397,24 @@ $txt['REMOVEANENTRY'] = "Disable, enable or remove an address from the list";
 $txt['REMOVEAWARNENTRYSHORTHELP'] = "Select the address or addresses you want to modify from the list and click on the desired action button.";
 $txt['REMTHEENTRY'] = "Remove selection";
 $txt['DISABLETHEENTRY'] = "Disable/enable selection";
-$txt['WHITELISTSHORTHELP'] = "The whitelist contains trusted sender addresses for which no quarantine retention will ever occur.<br />
+$txt['ALLOWLISTSHORTHELP'] = "The allowlist contains trusted sender addresses for which no quarantine retention will ever occur.<br />
                                    Warning: This functionality should be used as a temporary solution, as it decreases the overall protection.
-                                  Check the manual (available in section <a href=\"help.php\">\"Help\"</a>) for more information on whitelist usage. 
+                                  Check the manual (available in section <a href=\"help.php\">\"Help\"</a>) for more information on allowlist usage. 
 ";
-$txt['BLACKLISTSHORTHELP'] = "The blacklist contains blacklisted sender addresses.
-                                  Check the manual (available in section <a href=\"help.php\">\"Help\"</a>) for more information on black list usage.
+$txt['BLOCKLISTSHORTHELP'] = "The blocklist contains blocklisted sender addresses.
+                                  Check the manual (available in section <a href=\"help.php\">\"Help\"</a>) for more information on block list usage.
 ";
 $txt['NEWSLISTSHORTHELP'] = "The newsletter list contains addresses of desired newsletters.<br />
                                   Check the manual (available in section <a href=\"help.php\">\"Help\"</a>) for more information on newsletter list usage.
 ";
-$txt['WHITELISTFORADDRESS'] = "Whitelist for the address";
-$txt['ADDAWHITEENTRY'] = "Add an address to the list";
-$txt['WHITELISTENTRYTOADD'] = "Enter the address you want to add to the whitelist. You can also add an optional comment.";
-$txt['REMOVEAWHITEENTRYSHORTHELP'] = "Select the address or addresses you want to modify from the list and click on the desired action button.";
-$txt['BLACKLISTFORADDRESS'] = "Blacklist for the address";
-$txt['ADDABLACKENTRY'] = "Add an address to the list";
-$txt['BLACKLISTENTRYTOADD'] = "Enter the address you want to add to the blacklist. You can also add an optional comment.";
-$txt['REMOVEABLACKENTRYSHORTHELP'] = "Select the address or addresses you want to modify from the list and click on the desired action button.";
+$txt['ALLOWLISTFORADDRESS'] = "Allowlist for the address";
+$txt['ADDAALLOWENTRY'] = "Add an address to the list";
+$txt['ALLOWLISTENTRYTOADD'] = "Enter the address you want to add to the allowlist. You can also add an optional comment.";
+$txt['REMOVEAALLOWENTRYSHORTHELP'] = "Select the address or addresses you want to modify from the list and click on the desired action button.";
+$txt['BLOCKLISTFORADDRESS'] = "Blocklist for the address";
+$txt['ADDABLOCKENTRY'] = "Add an address to the list";
+$txt['BLOCKLISTENTRYTOADD'] = "Enter the address you want to add to the blocklist. You can also add an optional comment.";
+$txt['REMOVEABLOCKENTRYSHORTHELP'] = "Select the address or addresses you want to modify from the list and click on the desired action button.";
 $txt['NEWSLISTFORADDRESS'] = "Newsletter list for the address";
 $txt['ADDANEWSENTRY'] = "Add an address to the list";
 $txt['NEWSLISTENTRYTOADD'] = "Enter the address you want to add to the newsletter list. You can also add an optional comment.";
@@ -455,38 +455,38 @@ $txt['ENTIREDOMAIN'] = "Entire domain";
  */
 $txt['ADDNEWSLIST'] = "Accept all future newsletters from the same sender?";
 $txt['NEWSLISTHEAD'] = "Newslist rule has been added.";
-$txt['NEWSLISTBODY'] = "A newsletter whitelist rule has been added. Future messages from this sender will not be flagged if detected as a newsletter.";
+$txt['NEWSLISTBODY'] = "A newsletter allowlist rule has been added. Future messages from this sender will not be flagged if detected as a newsletter.";
 $txt['NOTNEWSLISTHEAD'] = "Newslist rule has not been added.";
-$txt['NOTNEWSLISTBODY'] = "There was a problem adding the newsletter whitelist.";
+$txt['NOTNEWSLISTBODY'] = "There was a problem adding the newsletter allowlist.";
 /*
- * Whitelist rule
+ * Allowlist rule
  */
-$txt['ADDWHITELIST'] = "Whitelist all future spams from the same sender?";
-$txt['WHITELISTHEAD'] = "Whitelist rule has been added.";
-$txt['WHITELISTBODY'] = "A whitelist rule has been added. Future messages from this sender will not be flagged if detected as a spam.";
-$txt['NOTWHITELISTHEAD'] = "Whitelist rule has not been added.";
-$txt['NOTWHITELISTBODY'] = "There was a problem adding the whitelist.";
+$txt['ADDALLOWLIST'] = "Allowlist all future spams from the same sender?";
+$txt['ALLOWLISTHEAD'] = "Allowlist rule has been added.";
+$txt['ALLOWLISTBODY'] = "A allowlist rule has been added. Future messages from this sender will not be flagged if detected as a spam.";
+$txt['NOTALLOWLISTHEAD'] = "Allowlist rule has not been added.";
+$txt['NOTALLOWLISTBODY'] = "There was a problem adding the allowlist.";
 /*
- * Newslist and Whitelist rule
+ * Newslist and Allowlist rule
  */
-$txt['ADDNEWSWHITELIST'] = "Accept all future newsletters from the same sender? Also whitelist all spam messages from this sender?";
-$txt['ADDWHITENEWSLIST'] = "Whitelist all future spams from the same sender? Also accept any newsletters from this sender?";
-$txt['NEWSWHITELISTHEAD'] = "Newslist and whitelist rules have been added.";
-$txt['NEWSWHITELISTBODY'] = "A newslist and whitelist rule have been added. Future messages from this sender will not be flagged if detected as a newsletter or a spam.";
-$txt['NEWSNOTWHITEHEAD'] = "Newslist has been added but whitelist has not.";
-$txt['NEWSNOTWHITEBODY'] = "A newsletter rule has been added, however, there was a problem adding the whitelist rule.";
-$txt['WHITENOTNEWSHEAD'] = "Whitelist has been added but newslist has not.";
-$txt['WHITENOTNEWSBODY'] = "A whitelist rule has been added, however, there was a problem adding the newsletter whitelist rule.";
-$txt['NOTNEWSWHITEHEAD'] = "Neither newslist nor whitelist rule have not been added.";
-$txt['NOTNEWSWHITEBODY'] = "There was a problem adding these rules.";
+$txt['ADDNEWSALLOWLIST'] = "Accept all future newsletters from the same sender? Also allowlist all spam messages from this sender?";
+$txt['ADDALLOWNEWSLIST'] = "Allowlist all future spams from the same sender? Also accept any newsletters from this sender?";
+$txt['NEWSALLOWLISTHEAD'] = "Newslist and allowlist rules have been added.";
+$txt['NEWSALLOWLISTBODY'] = "A newslist and allowlist rule have been added. Future messages from this sender will not be flagged if detected as a newsletter or a spam.";
+$txt['NEWSNOTALLOWHEAD'] = "Newslist has been added but allowlist has not.";
+$txt['NEWSNOTALLOWBODY'] = "A newsletter rule has been added, however, there was a problem adding the allowlist rule.";
+$txt['ALLOWNOTNEWSHEAD'] = "Allowlist has been added but newslist has not.";
+$txt['ALLOWNOTNEWSBODY'] = "A allowlist rule has been added, however, there was a problem adding the newsletter allowlist rule.";
+$txt['NOTNEWSALLOWHEAD'] = "Neither newslist nor allowlist rule have not been added.";
+$txt['NOTNEWSALLOWBODY'] = "There was a problem adding these rules.";
 /*
- * Blacklist rule (not currently implemented)
+ * Blocklist rule (not currently implemented)
  */
-$txt['ADDBLACKLIST'] = "Blacklist all future mail from the same sender?";
-$txt['BLACKLISTHEAD'] = "Blacklist rule has been added.";
-$txt['BLACKLISTBODY'] = "A blacklist rule has been added. Future messages from this sender will always be flagged as a spam.";
-$txt['NOTBLACKLISTHEAD'] = "Blacklist rule has not been added.";
-$txt['NOTBLACKLISTBODY'] = "There was a problem adding the blacklist.";
+$txt['ADDBLOCKLIST'] = "Blocklist all future mail from the same sender?";
+$txt['BLOCKLISTHEAD'] = "Blocklist rule has been added.";
+$txt['BLOCKLISTBODY'] = "A blocklist rule has been added. Future messages from this sender will always be flagged as a spam.";
+$txt['NOTBLOCKLISTHEAD'] = "Blocklist rule has not been added.";
+$txt['NOTBLOCKLISTBODY'] = "There was a problem adding the blocklist.";
 //
 $txt['ADDITIONALACTION'] = "Additional actions:";
 $txt['ADDRULE'] = "Adding WWList rule";
