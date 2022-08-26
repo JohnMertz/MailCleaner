@@ -56,7 +56,7 @@ class Default_Form_DomainAdvanced extends Zend_Form {
 		require_once('Validate/IpList.php');
 
 		$black_ip_dom = new Zend_Form_Element_Textarea('black_ip_dom', array(
-			'label'		=>  $t->_('Blacklist those IPs at SMTP stage')." :",
+			'label'		=>  $t->_('Blocklist those IPs at SMTP stage')." :",
 			'title'		=> $t->_("List of IPs or subnets to be rejected at SMTP stage for the current domain"),
 			'required'	=> false,
 			'rows'		=> 5,
@@ -72,7 +72,7 @@ class Default_Form_DomainAdvanced extends Zend_Form {
 		$this->addElement($black_ip_dom);
 
 		$spam_ip_dom = new Zend_Form_Element_Textarea('spam_ip_dom', array(
-			'label'    =>  $t->_('Blacklist those IPs at AntiSpam stage')." :",
+			'label'    =>  $t->_('Blocklist those IPs at AntiSpam stage')." :",
 			'title' => $t->_("List of IPs or subnets to be blocked at AntiSpam stage for the current domain"),
 			'required'   => false,
 			'rows' => 5,
@@ -87,14 +87,14 @@ class Default_Form_DomainAdvanced extends Zend_Form {
 		$this->addElement($spam_ip_dom);
 
 		$white_ip_dom = new Zend_Form_Element_Textarea('white_ip_dom', array(
-			'label'    =>  $t->_('Whitelist those IPs at SMTP stage')." :",
-			'title' => $t->_("List of IPs or subnets to be whitelisted at SMTP stage for the current domain"),
+			'label'    =>  $t->_('Allowlist those IPs at SMTP stage')." :",
+			'title' => $t->_("List of IPs or subnets to be allowlisted at SMTP stage for the current domain"),
 			'required'   => false,
 			'rows' => 5,
 			'cols' => 30,
 			'filters'    => array('StringToLower', 'StringTrim')));
 		$white_ip_dom->addValidator(new Validate_IpList());
-		$white_ip_dom->setValue($wwelement->fetchAllField($this->_domain->getParam('name'), 'white-ip-dom', 'sender'));
+		$white_ip_dom->setValue($wwelement->fetchAllField($this->_domain->getParam('name'), 'allow-ip-dom', 'sender'));
 	        if ($user_role != 'administrator') {
 			$white_ip_dom->setAttrib('disabled', true);
 			$white_ip_dom->setAttrib('readonly', true);
@@ -103,8 +103,8 @@ class Default_Form_DomainAdvanced extends Zend_Form {
 
 
 		$wh_spamc_ip_dom = new Zend_Form_Element_Textarea('wh_spamc_ip_dom', array(
-			'label'    =>  $t->_('Whitelist those IPs at AntiSpam stage')." :",
-			'title' => $t->_("List of IPs or subnets to be whitelisted at AntiSpam stage for the current domain"),
+			'label'    =>  $t->_('Allowlist those IPs at AntiSpam stage')." :",
+			'title' => $t->_("List of IPs or subnets to be allowlisted at AntiSpam stage for the current domain"),
 			'required'   => false,
 			'rows' => 5,
 			'cols' => 30,

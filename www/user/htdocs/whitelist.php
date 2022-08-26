@@ -5,7 +5,7 @@
  * @author John Mertz
  * @copyright 2021, MailCleaner
  *
- * This is the controler for the whitelist page
+ * This is the controler for the allowlist page
  */
 
 if ($_SERVER["REQUEST_METHOD"] == "HEAD") {
@@ -123,7 +123,7 @@ if (!isset($bad_arg)) {
 
         $is_sender_added_to_wl = send_SOAP_request(
             $master,
-            "addToWhitelist",
+            "addToAllowlist",
             array($dest, $sender)
         );
         if ($is_sender_added_to_wl != 'OK') {
@@ -141,11 +141,11 @@ $replace = array();
 
 // Setting the page text
 if ($is_sender_added_to_wl == 'OK') {
-    $replace['__HEAD__'] = $lang_->print_txt('WHITELISTHEAD');
-    $replace['__MESSAGE__'] = $lang_->print_txt('WHITELISTBODY');
+    $replace['__HEAD__'] = $lang_->print_txt('ALLOWLISTHEAD');
+    $replace['__MESSAGE__'] = $lang_->print_txt('ALLOWLISTBODY');
 } else {
-    $replace['__HEAD__'] = $lang_->print_txt('NOTWHITELISTHEAD');
-    $replace['__MESSAGE__'] = $lang_->print_txt('NOTWHITELISTBODY') . ' ' . $is_sender_added_to_wl;
+    $replace['__HEAD__'] = $lang_->print_txt('NOTALLOWLISTHEAD');
+    $replace['__MESSAGE__'] = $lang_->print_txt('NOTALLOWLISTBODY') . ' ' . $is_sender_added_to_wl;
 }
 
 // display page

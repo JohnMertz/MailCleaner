@@ -166,7 +166,7 @@ $antispam_ = new AntiSpam();
 $antispam_->load();
 
 if ($antispam_->getPref('enable_whitelists')) {
-  $template_->setCondition('SEEWHITELISTENABLER', true);
+  $template_->setCondition('SEEALLOWLISTENABLER', true);
   $template_->setCondition('SEELISTS', true);
 }
 if ($antispam_->getPref('enable_warnlists')) {
@@ -174,11 +174,11 @@ if ($antispam_->getPref('enable_warnlists')) {
   $template_->setCondition('SEELISTS', true);
 }
 if ($antispam_->getPref('enable_blacklists')) {
-  $template_->setCondition('SEEBLACKLISTENABLER', true);
+  $template_->setCondition('SEEBLOCKLISTENABLER', true);
   $template_->setCondition('SEELISTS', true);
 }
 if ($antispam_->getPref('enable_whitelists') && $selected_domain->getPref('enable_whitelists')) {
-  $template_->setCondition('SEEWHITELISTEDIT', true);
+  $template_->setCondition('SEEALLOWLISTEDIT', true);
   $template_->setCondition('SEELISTS', true);
 }
 if ($antispam_->getPref('enable_warnlists') && $selected_domain->getPref('enable_warnlists') ) {
@@ -186,7 +186,7 @@ if ($antispam_->getPref('enable_warnlists') && $selected_domain->getPref('enable
   $template_->setCondition('SEELISTS', true);
 }
 if ($antispam_->getPref('enable_blacklists') && $selected_domain->getPref('enable_blacklists') ) {
-  $template_->setCondition('SEEBLACKLISTEDIT', true);
+  $template_->setCondition('SEEBLOCKLISTEDIT', true);
   $template_->setCondition('SEELISTS', true);
 }
 
@@ -203,7 +203,7 @@ $replace = array(
   "__DOC_DOMAINPREFERENCES__" => $documentor->help_button('DOMAINPREFERENCES'),
   "__DOC_USERAUTHENTICATION__" => $documentor->help_button('USERAUTHENTICATION'),
   "__DOC_DOMAINTEMPLATES__" => $documentor->help_button('DOMAINTEMPLATES'), 
-  "__DOC_WHITEWARNLIST__" => $documentor->help_button('WHITEWARNLIST'),
+  "__DOC_ALLOWWARNLIST__" => $documentor->help_button('ALLOWWARNLIST'),
   "__DOMAINLIST_DRAW__" => $domains_->getList($template, $selected_domain->getPref('name')),
   "__REMOVE_FULLLINK__" => $_SERVER['PHP_SELF']."?m=d&d=",
   "__FORM_BEGIN_DOMAINEDIT__" => $dform_->open().$dform_->hidden('d', $selected_domain->id_).$dform_->hidden('ba', $batchadd),
@@ -223,9 +223,9 @@ $replace = array(
   "__FORM_INPUTANTISPAMTAG__" => $dform_->input('spam_tag', 10, $selected_domain->getPref('spam_tag')),
   "__FORM_INPUTCONTENT__" => $dform_->checkbox('contentwall', '1', $selected_domain->getPref('contentwall'), '', 1),
   "__FORM_INPUTCONTENTTAG__" => $dform_->input('content_subject', 10, $selected_domain->getPref('content_subject')),
-  "__FORM_INPUTENABLEWHITELIST__" => $dform_->checkbox('enable_whitelists', 1, $selected_domain->getPref('enable_whitelists'), whitelistWarning(), 1),
+  "__FORM_INPUTENABLEALLOWLIST__" => $dform_->checkbox('enable_whitelists', 1, $selected_domain->getPref('enable_whitelists'), allowlistWarning(), 1),
   "__FORM_INPUTENABLEWARNLIST__" => $dform_->checkbox('enable_warnlists', 1, $selected_domain->getPref('enable_warnlists'), '', 1),
-  "__FORM_INPUTENABLEBLACKLIST__" => $dform_->checkbox('enable_blacklists', 1, $selected_domain->getPref('enable_blacklists'), '', 1),
+  "__FORM_INPUTENABLEBLOCKLIST__" => $dform_->checkbox('enable_blacklists', 1, $selected_domain->getPref('enable_blacklists'), '', 1),
   "__FORM_INPUTENABLEWWNOTICE__" => $dform_->checkbox('notice_wwlists_hit', 1, $selected_domain->getPref('notice_wwlists_hit'), wwHitWarning(), 1),
   "__FORM_INPUTLANGUAGE__" => $dform_->select('language', $lang_->getLanguages('FULLNAMEASKEY'), $selected_domain->getPref('language'), ';'),
   "__FORM_INPUTSUMFREQ__" => $dform_->checkbox('daily_summary', 1, $selected_domain->getPref('daily_summary'), '', 1).$lang_->print_txt('DAILY')."&nbsp;&nbsp;".$dform_->checkbox('weekly_summary', 1, $selected_domain->getPref('weekly_summary'), '', 1).$lang_->print_txt('WEEKLY')."&nbsp;&nbsp;".$dform_->checkbox('monthly_summary', 1, $selected_domain->getPref('monthly_summary'), '', 1).$lang_->print_txt('MONTHLY'),
@@ -275,9 +275,9 @@ $replace = array(
   "__PREVIOUS_PAGE__" => $domains_->getPreviousPageLink(),
   "__NEXT_PAGE__" => $domains_->getNextPageLink(),
   "__PAGE_JS__" => $domains_->getJavaScript(),
-  "__LINK_EDITWHITELIST__" => "wwlist.php?t=1&a=@".$selected_domain->getPref('name'),
+  "__LINK_EDITALLOWLIST__" => "wwlist.php?t=1&a=@".$selected_domain->getPref('name'),
   "__LINK_EDITWARNLIST__" => "wwlist.php?t=2&a=@".$selected_domain->getPref('name'),
-  "__LINK_EDITBLACKLIST__" => "wwlist.php?t=3&a=@".$selected_domain->getPref('name'),
+  "__LINK_EDITBLOCKLIST__" => "wwlist.php?t=3&a=@".$selected_domain->getPref('name'),
   "__LINK_GOBATCHADD__" => $_SERVER['PHP_SELF']."?d=0&ba",
    
 );
@@ -330,11 +330,11 @@ function useMXJS() {
   return $ret;
 }
 
-function whitelistWarning() {
+function allowlistWarning() {
     global $dform_;
     global $lang_;
     $js = " if (window.document.forms['".$dform_->getName()."'].domain_enable_whitelists.value=='1') {" .
-            " alert ('".$lang_->print_txt('WHITELISTWARNING')."'); }";
+            " alert ('".$lang_->print_txt('ALLOWLISTWARNING')."'); }";
     return $js;
 }
 

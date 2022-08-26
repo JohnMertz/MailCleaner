@@ -5,7 +5,7 @@
  * @author Olivier Diserens
  * @copyright 2009, Olivier Diserens
  * 
- * White/Warn list element
+ * Allow/Warn list element
  */
 
 class Default_Model_WWElement

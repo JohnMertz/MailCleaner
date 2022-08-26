@@ -5,13 +5,13 @@
  * @author Mentor Reka
  * @copyright 2016, Mentor Reka
  *
- * Email blacklist form
+ * Email blocklist form
  */
 
-class Default_Form_Manage_EmailBlacklist extends Default_Form_ElementList
+class Default_Form_Manage_EmailBlocklist extends Default_Form_ElementList
 {
         protected $_email;
-        protected $_panelname = 'blacklist';
+        protected $_panelname = 'blocklist';
         public $_wwlist = array();
 
         public function __construct($email)

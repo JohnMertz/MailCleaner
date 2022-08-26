@@ -5,7 +5,7 @@
  * @author Olivier Diserens
  * @copyright 2009, Olivier Diserens
  * 
- * White/Warn list element mapper
+ * Allow/Warn list element mapper
  */
 
 class Default_Model_WWElementMapper

@@ -5,7 +5,7 @@
  * @author John Mertz
  * @copyright 2021, MailCleaner
  *
- * This is the controler for the blacklist page
+ * This is the controler for the blocklist page
  */
 
 if ($_SERVER["REQUEST_METHOD"] == "HEAD") {
@@ -120,7 +120,7 @@ if (!isset($bad_arg)) {
 
         $is_sender_added_to_bl = send_SOAP_request(
             $master,
-            "addToBlacklist",
+            "addToBlocklist",
             array($dest, $sender)
         );
         if ($is_sender_added_to_bl != 'OK') {
@@ -138,11 +138,11 @@ $replace = array();
 
 // Setting the page text
 if ($is_sender_added_to_bl == 'OK') {
-    $replace['__HEAD__'] = $lang_->print_txt('BLACKLISTHEAD');
-    $replace['__MESSAGE__'] = $lang_->print_txt('BLACKLISTBODY');
+    $replace['__HEAD__'] = $lang_->print_txt('BLOCKLISTHEAD');
+    $replace['__MESSAGE__'] = $lang_->print_txt('BLOCKLISTBODY');
 } else {
-    $replace['__HEAD__'] = $lang_->print_txt('NOTBLACKLISTHEAD');
-    $replace['__MESSAGE__'] = $lang_->print_txt('NOTBLACKLISTBODY') . ' ' . $is_sender_added_to_bl;
+    $replace['__HEAD__'] = $lang_->print_txt('NOTBLOCKLISTHEAD');
+    $replace['__MESSAGE__'] = $lang_->print_txt('NOTBLOCKLISTBODY') . ' ' . $is_sender_added_to_bl;
 }
 
 // display page

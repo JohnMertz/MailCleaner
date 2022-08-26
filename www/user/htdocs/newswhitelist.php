@@ -5,7 +5,7 @@
  * @author John Mertz
  * @copyright 2021, MailCleaner
  *
- * This is the controler for the newslist + whitelist page
+ * This is the controler for the newslist + allowlist page
  */
 
 
@@ -155,7 +155,7 @@ if (!isset($bad_arg)) {
 
         $is_sender_added_to_wl = send_SOAP_request(
             $master,
-            "addToWhitelist",
+            "addToAllowlist",
             array($dest, $sender)
         );
         if ($is_sender_added_to_wl != 'OK') {
@@ -174,20 +174,20 @@ $replace = array();
 
 // Setting the page text
 if ($is_sender_added_to_wl == 'OK' && $is_sender_added_to_wl == 'OK') {
-    $replace['__HEAD__'] = $lang_->print_txt('NEWSWHITELISTHEAD');
-    $replace['__MESSAGE__'] = $lang_->print_txt('NEWSWHITELISTBODY');
+    $replace['__HEAD__'] = $lang_->print_txt('NEWSALLOWLISTHEAD');
+    $replace['__MESSAGE__'] = $lang_->print_txt('NEWSALLOWLISTBODY');
 } elseif ($is_sender_added_to_news == 'OK') {
-    $replace['__HEAD__'] = $lang_->print_txt('NEWSNOTWHITEHEAD');
-    $replace['__MESSAGE__'] = $lang_->print_txt('NEWSNOTWHITEBODY') . ' ' . $is_sender_added_to_wl;
+    $replace['__HEAD__'] = $lang_->print_txt('NEWSNOTALLOWHEAD');
+    $replace['__MESSAGE__'] = $lang_->print_txt('NEWSNOTALLOWBODY') . ' ' . $is_sender_added_to_wl;
 } elseif ($is_sender_added_to_wl == 'OK') {
-    $replace['__HEAD__'] = $lang_->print_txt('WHITENOTNEWSHEAD');
-    $replace['__MESSAGE__'] = $lang_->print_txt('WHITENOTNEWSBODY') . ' ' . $is_sender_added_to_news;
+    $replace['__HEAD__'] = $lang_->print_txt('ALLOWNOTNEWSHEAD');
+    $replace['__MESSAGE__'] = $lang_->print_txt('ALLOWNOTNEWSBODY') . ' ' . $is_sender_added_to_news;
 } else {
-    $replace['__HEAD__'] = $lang_->print_txt('NOTNEWSWHITEHEAD');
+    $replace['__HEAD__'] = $lang_->print_txt('NOTNEWSALLOWHEAD');
     if ($is_sender_added_to_news == $is_sender_added_to_wl) {
-        $replace['__MESSAGE__'] = $lang_->print_txt('NOTNEWSWHITEBODY') . ' ' . $is_sender_added_to_news;
+        $replace['__MESSAGE__'] = $lang_->print_txt('NOTNEWSALLOWBODY') . ' ' . $is_sender_added_to_news;
     } else {
-        $replace['__MESSAGE__'] = $lang_->print_txt('NOTNEWSWHITEBODY') . ' ' . $lang_->print_txt('NEWSLISTTOPIC') . ': ' . $is_sender_added_to_news . ' ' . $lang_->print_txt('WHITELISTTOPIC') . ': ' . $is_sender_added_to_wl;
+        $replace['__MESSAGE__'] = $lang_->print_txt('NOTNEWSALLOWBODY') . ' ' . $lang_->print_txt('NEWSLISTTOPIC') . ': ' . $is_sender_added_to_news . ' ' . $lang_->print_txt('ALLOWLISTTOPIC') . ': ' . $is_sender_added_to_wl;
     }
 }
 
