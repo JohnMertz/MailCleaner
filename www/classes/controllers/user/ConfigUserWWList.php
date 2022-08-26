@@ -24,10 +24,10 @@ class ConfigUserWWList {
     public function __construct() {
         global $user_;
 
-        if ($_GET['t'] && $_GET['t'] == 'white') {
-            $this->type_ = 'white';
+        if ($_GET['t'] && $_GET['t'] == 'allow' || $_GET['t'] == 'white') {
+            $this->type_ = 'allow';
         }
-        if ($_GET['t'] && $_GET['t'] == 'block') {
+        if ($_GET['t'] && $_GET['t'] == 'block' || $_GET['t'] == 'black') {
             $this->type_ = 'block';
         }
         if ($_GET['t'] && $_GET['t'] == 'wnews') {
@@ -188,12 +188,12 @@ class ConfigUserWWList {
         $antispam_ = new AntiSpam();
         $antispam_->load();
 
-        if ($this->type_ == "white" && $antispam_->getPref('enable_whitelists') && $user_->getDomain()->getPref('enable_whitelists'))  {
+        if (($this->type_ == "white" || $this->type_ == 'allow') && $antispam_->getPref('enable_whitelists') && $user_->getDomain()->getPref('enable_whitelists'))  {
             $replace['__INPUT_ADDADDRESS__'] = $this->addform_->input('entry', 38, '');
             $replace['__INPUT_ADDCOMMENT__'] = $this->addform_->input('comment', 35, '');
             $replace['__INPUT_ADDSUBMIT__']  = $this->addform_->submit('addentry', $lang_->print_txt('ADDTHEENTRY'), '');
             $replace['__INPUT_ADDTOGROUP__'] = $this->addform_->submit('togroup', $lang_->print_txt('ADDTOGROUP'), '');
-        } else if ($this->type_ == "block" && $antispam_->getPref('enable_blacklists') && $user_->getDomain()->getPref('enable_blacklists'))  {
+        } else if (($this->type_ == "block" || $this->type_ == "black") && $antispam_->getPref('enable_blacklists') && $user_->getDomain()->getPref('enable_blacklists'))  {
             $replace['__INPUT_ADDADDRESS__'] = $this->addform_->input('entry', 38, '');
             $replace['__INPUT_ADDCOMMENT__'] = $this->addform_->input('comment', 35, '');
             $replace['__INPUT_ADDSUBMIT__']  = $this->addform_->submit('addentry', $lang_->print_txt('ADDTHEENTRY'), '');

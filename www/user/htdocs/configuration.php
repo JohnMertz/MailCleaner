@@ -45,14 +45,21 @@ if ($antispam_->getPref('enable_warnlists') && $user_->getDomain()->getPref('ena
 if ($antispam_->getPref('enable_whitelists') && $user_->getDomain()->getPref('enable_whitelists')) {
 } */
 
-$topics['allow'] = array('ALLOWLISTTOPIC', 'conf_allowlist.tmpl', 'ConfigUserWWList');
-$topics['block'] = array('BLOCKLISTTOPIC', 'conf_blocklist.tmpl', 'ConfigUserWWList');
+$topics['white'] = array('ALLOWLISTTOPIC', 'conf_whitelist.tmpl', 'ConfigUserWWList');
+$topics['black'] = array('BLOCKLISTTOPIC', 'conf_blacklist.tmpl', 'ConfigUserWWList');
 $topics['wnews'] = array('NEWSLISTTOPIC', 'conf_newslist.tmpl', 'ConfigUserWWList');
 
 
 $topic = 'int';
-if (isset($_GET['t']) && isset($topics[$_GET['t']])) {
-  $topic = $_GET['t'];
+if (isset($_GET['t'])) {
+  if ($_GET['t'] == 'allow') {
+    $_GET['t'] = 'white';
+  } elseif ($_GET['t'] == 'block') {
+    $_GET['t'] = 'black';
+  }
+  if (isset($topics[$_GET['t']])) {
+    $topic = $_GET['t'];
+  }
 }
 if (!isset($topics[$topic])) {
 	$topic = key($topics);
