@@ -1,4 +1,4 @@
-Subject: MailCleaner warn/white list hit
+Subject: MailCleaner warn/allow list hit
 
 Hello,
 
