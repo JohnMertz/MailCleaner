@@ -45,17 +45,17 @@ if ($antispam_->getPref('enable_warnlists') && $user_->getDomain()->getPref('ena
 if ($antispam_->getPref('enable_whitelists') && $user_->getDomain()->getPref('enable_whitelists')) {
 } */
 
-$topics['white'] = array('ALLOWLISTTOPIC', 'conf_whitelist.tmpl', 'ConfigUserWWList');
-$topics['black'] = array('BLOCKLISTTOPIC', 'conf_blacklist.tmpl', 'ConfigUserWWList');
-$topics['wnews'] = array('NEWSLISTTOPIC', 'conf_newslist.tmpl', 'ConfigUserWWList');
 
+$topics['allow'] = array('ALLOWLISTTOPIC', 'conf_whitelist.tmpl', 'ConfigUserWWList');
+$topics['block'] = array('BLOCKLISTTOPIC', 'conf_blacklist.tmpl', 'ConfigUserWWList');
+$topics['wnews'] = array('NEWSLISTTOPIC', 'conf_newslist.tmpl', 'ConfigUserWWList');
 
 $topic = 'int';
 if (isset($_GET['t'])) {
-  if ($_GET['t'] == 'allow') {
-    $_GET['t'] = 'white';
-  } elseif ($_GET['t'] == 'block') {
-    $_GET['t'] = 'black';
+  if ($_GET['t'] == 'white') {
+    $_GET['t'] = 'allow';
+  } elseif ($_GET['t'] == 'black') {
+    $_GET['t'] = 'block';
   }
   if (isset($topics[$_GET['t']])) {
     $topic = $_GET['t'];
@@ -64,6 +64,7 @@ if (isset($_GET['t'])) {
 if (!isset($topics[$topic])) {
 	$topic = key($topics);
 }
+
 
 // get specific controller
 require_once('controllers/Controller.php');
