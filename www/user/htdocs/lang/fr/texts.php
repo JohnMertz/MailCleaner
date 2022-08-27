@@ -10,7 +10,7 @@ $txt['NEWSLETTERMODULE'] = "Lettre d'information";
 $txt['NEWSLETTERSTOPIC'] = "Lettres d'information";
 $txt['NEWSLETTERSTOPICTITLE'] = "Lettres d'information";
 $txt['NEWSLETTERSSHORTHELP'] = "Ici vous pouvez gérer vos lettres d'information.";
-$txt['NEWSLETTERSDELIVER'] = "distribuer";
+$txt['NEWSLETTERSALLOW'] = "distribuer";
 $txt['NEWSLETTERACCEPT'] = "Accepter cette lettre d'information";
 $txt['SPAM_ALLOWLIST_DISABLED'] = "Cette liste n'est pas activée pour ce domaine (Contactez votre administrateur).";
 /* 

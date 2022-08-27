@@ -10,7 +10,7 @@ $txt['NEWSLETTERMODULE'] = "خبرنامه";
 $txt['NEWSLETTERSTOPIC'] = "خبرنامه ها";
 $txt['NEWSLETTERSTOPICTITLE'] = "خبرنامه ها";
 $txt['NEWSLETTERSSHORTHELP'] = "در این قسمت میتوانید خبرنامه‌ها را اداره کنید.";
-$txt['NEWSLETTERSDELIVER'] = "ارائه";
+$txt['NEWSLETTERSALLOW'] = "ارائه";
 $txt['NEWSLETTERACCEPT'] = "این خبر نامه را قبول کنید.";
 $txt['SPAM_ALLOWLIST_DISABLED'] = "این فهرست برای این دومین فعال نیست (با مدیره سیستم تماس بگیرید).";
 /*

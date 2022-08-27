@@ -10,7 +10,7 @@ $txt['NEWSLETTERMODULE'] = "Informačný bulletin";
 $txt['NEWSLETTERSTOPIC'] = "Informačné bulletiny";
 $txt['NEWSLETTERSTOPICTITLE'] = "Informačné bulletiny";
 $txt['NEWSLETTERSSHORTHELP'] = "Tu môžete spravovať svoje informačné bulletiny.";
-$txt['NEWSLETTERSDELIVER'] = "doručiť";
+$txt['NEWSLETTERSALLOW'] = "doručiť";
 $txt['NEWSLETTERACCEPT'] = "Akceptovať tento informačný bulletin";
 $txt['SPAM_ALLOWLIST_DISABLED'] = "Zoznam nieje aktivovaný pre túto doménu (Kontaktujte Vášho administrátora).";
 /* 

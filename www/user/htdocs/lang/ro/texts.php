@@ -10,7 +10,7 @@ $txt['NEWSLETTERMODULE'] = "Buletin informativ";
 $txt['NEWSLETTERSTOPIC'] = "Buletine informative";
 $txt['NEWSLETTERSTOPICTITLE'] = "Buletine informative";
 $txt['NEWSLETTERSSHORTHELP'] = "Aici vă puteți administra buletinele informative.";
-$txt['NEWSLETTERSDELIVER'] = "livrează";
+$txt['NEWSLETTERSALLOW'] = "livrează";
 $txt['NEWSLETTERACCEPT'] = "Acceptă acest buletin informativ";
 $txt['SPAM_ALLOWLIST_DISABLED'] = "Lista nu e activată pentru acest domeniu (contactați-vă administratorul).";
 /*

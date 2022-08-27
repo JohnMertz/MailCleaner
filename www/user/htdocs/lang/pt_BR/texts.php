@@ -10,7 +10,7 @@ $txt['NEWSLETTERMODULE'] = "Boletim informativo";
 $txt['NEWSLETTERSTOPIC'] = "Boletins informativos";
 $txt['NEWSLETTERSTOPICTITLE'] = "Boletins informativos";
 $txt['NEWSLETTERSSHORTHELP'] = "Aqui você pode gerenciar os boletins informativos.";
-$txt['NEWSLETTERSDELIVER'] = "Entregar";
+$txt['NEWSLETTERSALLOW'] = "Entregar";
 $txt['NEWSLETTERACCEPT'] = "Aceitar este boletim informativo";
 $txt['SPAM_ALLOWLIST_DISABLED'] = "Esta lista não está ativada para este domínio (Contate o administrador) .";
 /*

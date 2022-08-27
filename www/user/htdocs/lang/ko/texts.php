@@ -10,7 +10,7 @@ $txt['NEWSLETTERMODULE'] = "뉴스레터";
 $txt['NEWSLETTERSTOPIC'] = "뉴스레터";
 $txt['NEWSLETTERSTOPICTITLE'] = "뉴스레터";
 $txt['NEWSLETTERSSHORTHELP'] = "이곳에서 당신의 뉴스레터를 관리 할 수 있습니다.";
-$txt['NEWSLETTERSDELIVER'] = "배달";
+$txt['NEWSLETTERSALLOW'] = "배달";
 $txt['NEWSLETTERACCEPT'] = "이 뉴스레터 허용";
 $txt['SPAM_ALLOWLIST_DISABLED'] = "해당 리스트는 이 도메인에서 활성화 되지 않았습니다 (관리자에게 문의하세요).";
 /* 

@@ -10,7 +10,7 @@ $txt['NEWSLETTERMODULE'] = "Nyhedsbrev";
 $txt['NEWSLETTERSTOPIC'] = "Nyhedsbreve";
 $txt['NEWSLETTERSTOPICTITLE'] = "Nyhedsbreve";
 $txt['NEWSLETTERSSHORTHELP'] = "Her kan du håndtere nyhedsbreve.";
-$txt['NEWSLETTERSDELIVER'] = "levere";
+$txt['NEWSLETTERSALLOW'] = "levere";
 $txt['NEWSLETTERACCEPT'] = "Accepter dette nyhedsbrev";
 $txt['SPAM_ALLOWLIST_DISABLED'] = "Liste er ikke aktiveret for det domæne (kontakt din administrator).";
 /*

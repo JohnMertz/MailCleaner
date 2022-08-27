@@ -10,7 +10,7 @@ $txt['NEWSLETTERMODULE'] = "Nyhetsbrev";
 $txt['NEWSLETTERSTOPIC'] = "Nyhetsbrev";
 $txt['NEWSLETTERSTOPICTITLE'] = "Nyhetsbrev";
 $txt['NEWSLETTERSSHORTHELP'] = "Här kan du hantera dina nyhetsbrev.";
-$txt['NEWSLETTERSDELIVER'] = "leverera";
+$txt['NEWSLETTERSALLOW'] = "leverera";
 $txt['NEWSLETTERACCEPT'] = "Acceptera detta nyhetsbrev";
 $txt['SPAM_ALLOWLIST_DISABLED'] = "Listan är inte aktiverad för denna domän (kontakta din administratör).";
 /* 

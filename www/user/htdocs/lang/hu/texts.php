@@ -10,7 +10,7 @@ $txt['NEWSLETTERMODULE'] = "Hírlevél";
 $txt['NEWSLETTERSTOPIC'] = "Hírlevelek";
 $txt['NEWSLETTERSTOPICTITLE'] = "Hírlevelek";
 $txt['NEWSLETTERSSHORTHELP'] = "Itt kezelheti a hírleveleket.";
-$txt['NEWSLETTERSDELIVER'] = "Postáz";
+$txt['NEWSLETTERSALLOW'] = "Postáz";
 $txt['NEWSLETTERACCEPT'] = "Elfogadja ezt a hírlevelet";
 $txt['SPAM_ALLOWLIST_DISABLED'] = "Ez a lista nem aktívált ehhez a tartományhoz (Forduljon a Rendszergazdához).";
 /*
