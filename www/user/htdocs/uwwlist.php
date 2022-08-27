@@ -71,11 +71,16 @@ if ($mode == "badmode") {
 }
 
 // check list type parameter
+$type_url = 'warn';
 $type = 'warn';
-if ($type_get == '1' || $type_get == 'allow' || $type_get == 'white') 
+if ($type_get == '1' || $type_get == 'allow' || $type_get == 'white') {
 	$type = 'white';
-if ($type_get == '3' || $type_get == 'block' || $type_get == 'black')
+	$type_url = 'allow';
+}
+if ($type_get == '3' || $type_get == 'block' || $type_get == 'black') {
 	$type = 'black';
+	$type_url = 'block';
+}
 
 // check if should delete
 if ($_GET['d'] && is_numeric($_GET['d'])) {
@@ -160,14 +165,14 @@ $replace = array(
   "__NEXT_PAGE__" => $wwlist->getNextPageLink(),
   "__PAGE_JS__" => $wwlist->getJavaScript(),
   "__WWLIST_FOR__" => getWWListHeader(),
-  "__FORM_BEGIN_WWENTRYADD__" => $aform->open().$aform->hidden('a', $address).$aform->hidden('type', $type_get),
+  "__FORM_BEGIN_WWENTRYADD__" => $aform->open().$aform->hidden('a', $address).$aform->hidden('type', $type_url),
   "__FORM_CLOSE_WWENTRYADD__" => $aform->close(),
   "__FORM_INPUTSENDER__" => $aform->input("sender", 30, ''),
   "__FORM_INPUTSTATUS__" => $aform->select('status', $active_inactive, '1', ';'),
   "__FORM_INPUTCOMMENT__" => $aform->input("comments", 35, ''),
   "__FORM_INPUTSUBMIT__" => "window.document.forms['".$aform->getName()."'].submit()",
-  "__REMOVE_FULLLINK__" => $_SERVER['PHP_SELF']."?a=".$address."&t=".$type_get."&d=",
-  "__EDIT_BASELINK__" => $_SERVER['PHP_SELF']."?a=".$address."&t=".$type_get,
+  "__REMOVE_FULLLINK__" => $_SERVER['PHP_SELF']."?a=".$address."&t=".$type_url."&d=",
+  "__EDIT_BASELINK__" => $_SERVER['PHP_SELF']."?a=".$address."&t=".$type_url,
   "__FORM_BEGIN_SEARCH__" => $sform->open().$sform->hidden('page', $wwlist->getPage()).$sform->hidden('t', $type).$sform->hidden('a', $address),
   "__FORM_CLOSE_SEARCH__" => $sform->close(),
   
