@@ -10,7 +10,7 @@ $txt['NEWSLETTERMODULE'] = "ニュース";
 $txt['NEWSLETTERSTOPIC'] = "ニュース";
 $txt['NEWSLETTERSTOPICTITLE'] = "ニュース";
 $txt['NEWSLETTERSSHORTHELP'] = "ここではニュースを管理します。";
-$txt['NEWSLETTERSDELIVER'] = "購読";
+$txt['NEWSLETTERSALLOW'] = "購読";
 $txt['NEWSLETTERACCEPT'] = "Accept this newsletter";
 $txt['SPAM_ALLOWLIST_DISABLED'] = "The list is not activated for this domain (contact your administrator).";
 /*

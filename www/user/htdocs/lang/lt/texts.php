@@ -10,7 +10,7 @@ $txt['NEWSLETTERMODULE'] = "Naujienlaiškis";
 $txt['NEWSLETTERSTOPIC'] = "Naujienlaiškiai";
 $txt['NEWSLETTERSTOPICTITLE'] = "Naujienlaiškiai";
 $txt['NEWSLETTERSSHORTHELP'] = "Čia galite tvarkyti savo naujienlaiškius.";
-$txt['NEWSLETTERSDELIVER'] = "pristatymas";
+$txt['NEWSLETTERSALLOW'] = "pristatymas";
 $txt['NEWSLETTERACCEPT'] = "Priimti šį naujienlaiškį";
 $txt['SPAM_ALLOWLIST_DISABLED'] = "Šis sąrašas nėra aktyvuotas Jūsų domenui ( susisiekite su administratoriumi).";
 /*

@@ -9,7 +9,7 @@
 $txt['NEWSLETTERSTOPIC'] = "Nieuwsbrieven";
 $txt['NEWSLETTERSTOPICTITLE'] = "Nieuwsbrieven";
 $txt['NEWSLETTERSSHORTHELP'] = "Hier kun je uw nieuwsbrieven beheren.";
-$txt['NEWSLETTERSDELIVER'] = "afleveren";
+$txt['NEWSLETTERSALLOW'] = "afleveren";
 $txt['NEWSLETTERACCEPT'] = "Accepteer deze nieuwsbrief";
 $txt['SPAM_ALLOWLIST_DISABLED'] = "Deze lijst is niet geactiveerd voor dit domein (Neem contact op met de beheerder).";
 ### missing translations

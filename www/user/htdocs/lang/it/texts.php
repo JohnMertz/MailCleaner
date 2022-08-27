@@ -10,7 +10,7 @@ $txt['NEWSLETTERMODULE'] = "Newsletter";
 $txt['NEWSLETTERSTOPIC'] = "Newsletter";
 $txt['NEWSLETTERSTOPICTITLE'] = "Newsletter";
 $txt['NEWSLETTERSSHORTHELP'] = "Qui puoi gestire le tue newsletter.";
-$txt['NEWSLETTERSDELIVER'] = "consegna";
+$txt['NEWSLETTERSALLOW'] = "consegna";
 $txt['NEWSLETTERACCEPT'] = "Accetta questa newsletter";
 $txt['SPAM_ALLOWLIST_DISABLED'] = "This list is not activated for this domain (Contact your administrator).";
 /* 

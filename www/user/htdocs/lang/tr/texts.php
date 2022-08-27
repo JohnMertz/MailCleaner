@@ -10,7 +10,7 @@ $txt['NEWSLETTERMODULE'] = "Bülten";
 $txt['NEWSLETTERSTOPIC'] = "Bültenler";
 $txt['NEWSLETTERSTOPICTITLE'] = "Bültenler";
 $txt['NEWSLETTERSSHORTHELP'] = "Bültenlerinizi buradan yönetebilirsiniz.";
-$txt['NEWSLETTERSDELIVER'] = "teslim et";
+$txt['NEWSLETTERSALLOW'] = "teslim et";
 $txt['NEWSLETTERACCEPT'] = "Bu bülteni kabul et";
 $txt['SPAM_ALLOWLIST_DISABLED'] = "Bu etki alanı için liste etkinleştirilmedi (yöneticinizle iletişim kurun).";
 /* 

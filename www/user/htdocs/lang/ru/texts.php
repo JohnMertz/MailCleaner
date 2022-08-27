@@ -159,7 +159,7 @@ $txt['BEENLOGGEDOUT'] = "Если вы хотите начать новую се
 ### newsl
 $txt['NEWSLETTERMODULE'] = "Новостная рассылка";
 $txt['NEWSLETTERSSHORTHELP'] = "Здесь вы можете управлять своими новостными рассылками.";
-$txt['NEWSLETTERSDELIVER'] = "доставить";
+$txt['NEWSLETTERSALLOW'] = "доставить";
 /*
  * quick actions
  */

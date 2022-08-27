@@ -10,7 +10,7 @@ $txt['NEWSLETTERMODULE'] = "zpravodaj";
 $txt['NEWSLETTERSTOPIC'] = "zpravodaje";
 $txt['NEWSLETTERSTOPICTITLE'] = "zpravodaje";
 $txt['NEWSLETTERSSHORTHELP'] = "Zde můžete spravovat své informační bulletiny.";
-$txt['NEWSLETTERSDELIVER'] = "doručit";
+$txt['NEWSLETTERSALLOW'] = "doručit";
 $txt['NEWSLETTERACCEPT'] = "akceptovat tento informační bulletin";
 $txt['SPAM_ALLOWLIST_DISABLED'] = "Seznam není aktivní pro tuto doménu (Kontaktujte vašeho administrátora).";
 /*

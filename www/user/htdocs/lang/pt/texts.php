@@ -1,5 +1,5 @@
 <?php
-$txt['NEWSLETTERSDELIVER'] = "entregar";
+$txt['NEWSLETTERSALLOW'] = "entregar";
 $txt['NEWSLETTERACCEPT'] = "Aceitar esta newsletter";
 $txt['SPAM_ALLOWLIST_DISABLED'] = "A lista não está ativada para este domínio (Contacte o seu administrador).";
 /* 

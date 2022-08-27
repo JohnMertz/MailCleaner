@@ -10,7 +10,7 @@ $txt['NEWSLETTERMODULE'] = "通讯";
 $txt['NEWSLETTERSTOPIC'] = "新闻资讯";
 $txt['NEWSLETTERSTOPICTITLE'] = "新闻资讯";
 $txt['NEWSLETTERSSHORTHELP'] = "在这里, 您可以管理您的新闻稿。";
-$txt['NEWSLETTERSDELIVER'] = "传递";
+$txt['NEWSLETTERSALLOW'] = "传递";
 $txt['NEWSLETTERACCEPT'] = "收到这封新闻稿";
 $txt['SPAM_ALLOWLIST_DISABLED'] = "此域未激活该列表 (请与管理员联系)。";
 /*

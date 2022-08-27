@@ -10,7 +10,7 @@ $txt['NEWSLETTERMODULE'] = "電子報";
 $txt['NEWSLETTERSTOPIC'] = "電子報";
 $txt['NEWSLETTERSTOPICTITLE'] = "電子報";
 $txt['NEWSLETTERSSHORTHELP'] = "您可以從這裡管理您的電子報。";
-$txt['NEWSLETTERSDELIVER'] = "寄送";
+$txt['NEWSLETTERSALLOW'] = "寄送";
 $txt['NEWSLETTERACCEPT'] = "接受此電子報";
 $txt['SPAM_ALLOWLIST_DISABLED'] = "本網域尚未啟用此清單（請與您的管理員連繫）。";
 /* 
